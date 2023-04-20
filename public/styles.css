@@ -23,10 +23,10 @@ body {
   align-items: center;
   padding-left: 2%;
   padding-right: 2%;
-  position: fixed;
+  /* position: fixed; */
   width: 100vw;
   z-index: 99;
-  top: 0;
+  /* top: 0; */
   box-shadow: none;
   /* background-color: red; */
 }
@@ -126,7 +126,8 @@ body {
 }
 
 .heroSectionSubDiv{
-    background-color: #6134BE;
+    /* background-color: #6134BE; */
+    background-color: #24016c;
     padding: 5%;
     display: flex;
     gap: 5%;
@@ -173,7 +174,15 @@ body {
 }
 
 .heroSectionRight{
-    background-color: #5E5DF0;
+    /* background-color: #5E5DF0; */
+    /* From https://css.glass */
+background: rgba(78, 255, 222, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(78, 255, 222, 0.41);
+    
     border-radius: 20px;
     flex: 0.5;
     display: flex;
@@ -181,6 +190,7 @@ body {
 }
 
 .heroSectionRightTop{
+
     display: flex;
     justify-content: space-between;
     padding: 2% 4%;
@@ -189,12 +199,21 @@ body {
     color:white;
 }
 .heroSectionRightCenter{
-    background: linear-gradient(135deg,#cb5eee,#4be1ec);
+    /* background: linear-gradient(135deg,#cb5eee,#4be1ec); */
+    /* From https://css.glass */
+background: rgba(78, 255, 222, 0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(78, 255, 222, 0.41);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 2%;
     border-radius: 0 0 20px 20px;
+    /* color:purple; */
+    font-weight: 600;
 }
 
 .heroSectionRightCenterText1{
@@ -407,3 +426,87 @@ body {
       left: -60px;
     }
   }  
+
+
+
+  /* <----------------------------------Utility--------------------------------> */
+
+  .utilitySection{
+    padding: 2% 4%;
+    font-family: 'Chivo', sans-serif;
+  }
+  .utilitySectionIntro{
+    color:white;
+    width: 60%;
+  }
+  .utilitySectionIntro p:first-child{
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-top: 0%;
+  }
+  .utilitySectionIntro p:last-child{
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-top: 0%;
+  }
+  .utilitySectionContainer{
+    display: flex;
+    padding-top:2%;
+  }
+  .utilitySectionLeft{
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .utilitySectionLeftDivs{
+    padding: 5%;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .utilitySectionLeftDivs:hover{
+    background-color: #6134BE;
+  }
+  .utilitySectionRight{
+    /* flex: 0.4; */
+    /* padding-left: 15%; */
+  }
+
+
+
+  /* <---------------------------------------Service Section------------------------>  */
+
+  .utilitySection{
+    font-family: 'Chivo', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+  }
+  .serviceSectionHeading{
+    color:white;
+    font-size: 3rem;
+    padding: 3%;
+    text-align: center;
+  }
+
+  .serviceSectionWrapper{
+    display: flex;
+  }
+  .serviceSectionSubWrapper{
+    color:white;
+    text-align: center;
+    padding: 5%;
+    transition: all 0.5s ease-in;
+  }
+  .serviceSectionSubWrapper:hover{
+    background-color: #21172e;
+    transform: scale(110%);
+  }
+  .serviceSectionSubHeadings{
+    font-size: 2rem;
+    padding: 5%;
+  }
+
+  .serviceSectionDescription{
+    padding-top:2%;
+  }

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { HamburgerMenu } from "./HamBurgerMenu";
-// import logo from "./logo.svg";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
